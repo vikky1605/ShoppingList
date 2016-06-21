@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="week_costs">Расходы за неделю</string>
+    <string name="previous_week">предыдущая неделя</string>
+    <string name="next_week">следующая неделя</string>
+    <string name="this_week">текущая неделя</string>
+    <string name="plan_costs">запланировать расходы</string>
+    <string name="result">Остаток / перерасход</string>
+    <string name="to_plan_costs">Запланируем расходы?</string>
+    <string name="input_sum">введите сюда планируемую сумму расходов</string>
+    <string name="save">сохранить</string>
+    <string name="cancel">отменить</string>
+</resources>
