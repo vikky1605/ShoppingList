@@ -1,13 +1,77 @@
 <resources>
     <string name="app_name">Shopping List</string>
     <string name="week_costs">Расходы за неделю</string>
-    <string name="previous_week">предыдущая неделя</string>
-    <string name="next_week">следующая неделя</string>
-    <string name="this_week">текущая неделя</string>
     <string name="plan_costs">запланировать расходы</string>
     <string name="result">Остаток / перерасход</string>
     <string name="to_plan_costs">Запланируем расходы?</string>
-    <string name="input_sum">введите сюда планируемую сумму расходов</string>
+    <string name="input_sum">введите планируемую сумму расходов</string>
     <string name="save">сохранить</string>
     <string name="cancel">отменить</string>
+    <string name="period_not_found">Такого периода нет в базе данных</string>
+
+    <string name="add_buy">добавим покупку в список?</string>
+    <string name="buy_type">категория покупки</string>
+    <string name="buy_item">наименование покупки</string>
+    <string name="buy_unit">единица измерения</string>
+    <string name="buy_quantity">количество</string>
+    <string name="price_buy_unit">цена за единицу</string>
+    <string name="buy_amount">сумма покупки</string>
+    <string name="buy_importance">важность</string>
+    <string name="buy_status_check">отметить покупку как совершенную</string>
+
+    <string name="settings_app">Параметры приложения</string>
+    <string name="settings_input_buy">Параметры ввода покупок</string>
+    <string name="settings_buy_list">Параметры списка покупок</string>
+    <string name="choose_contact_for_SMS">Выбрать контакт для отправки СМС</string>
+    <string name="back_to_app">Вернуться в приложение</string>
+    <string name="show_plan_buys">Показывать в списке только планируемые покупки</string>
+    <string name="show_all_buys">Показывать в спике все покупки</string>
+    <string name="back_to_settings">Вернуться к настройкам приложения</string>
+
+    <string name="choose_settings_buy">Выберите параметры покупок</string>
+    <string name="done">готово</string>
+
+    <string name="price_by_unit">рублей за единицу</string>
+    <string name="rubles">рублей</string>
+    <string name="middle_importance">средняя важность</string>
+
+    <string name="plan_of_costs">планируемый расход</string>
+    <string name="fact_of_costs">уже израсходовано</string>
+    <string name="plan_buys">запланировано покупок</string>
+
+    <string-array name="buy_type">
+        <item>прочее</item>
+        <item>продукты питания</item>
+        <item>алкоголь</item>
+        <item>товары для дома</item>
+        <item>здоровье и гигиена</item>
+        <item>одежда и обувь</item>
+        <item>товары для домашних питомцев</item>
+    </string-array>
+
+    <string-array name="buy_unit">
+        <item>штука</item>
+        <item>килограмм</item>
+        <item>грамм</item>
+        <item>литр</item>
+        <item>пакет</item>
+        <item>упаковка</item>
+        <item>пачка</item>
+        <item>бутылка</item>
+    </string-array>
+
+    <string-array name="buy_importance">
+        <item>средняя</item>
+        <item>высокая</item>
+        <item>низкая</item>
+    </string-array>
+
+    <string-array name="change_buy_importance">
+        <item>изменить?</item>
+        <item>высокая</item>
+        <item>средняя</item>
+        <item>низкая</item>
+    </string-array>
+
+
 </resources>

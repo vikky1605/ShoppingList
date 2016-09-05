@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_buy_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/spacing_tiny_2"
+    app:cardElevation="@dimen/spacing_scanty_4"
+    app:cardBackgroundColor="@color/mintGreen"
+    android:layout_gravity="center"
+    >
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_buy"
+        android:layout_marginBottom="@dimen/spacing_little_8"
+        android:layout_marginRight="@dimen/spacing_small_12"
+        android:layout_marginTop="@dimen/spacing_little_8"/>
+
+    <LinearLayout
+        android:id="@+id/container_for_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_for_buy_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_buy_type"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/spacing_small_12"
+                android:text="@string/buy_type"/>
+
+        <Spinner
+            style="@style/textView"
+            android:id="@+id/type_buy_enter"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_little_8"
+            android:spinnerMode="dialog"
+            android:entries="@array/buy_type"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_for_buy_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_for_buy_item"
+            style="@style/textView"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_small_12"
+            android:text="@string/buy_item"/>
+
+
+        <EditText
+            android:id="@+id/item_buy_enter"
+            style="@style/textView"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_little_8"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_for_buy_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_for_buy_unit"
+            style="@style/textView"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_small_12"
+            android:text="@string/buy_unit"/>
+
+        <Spinner
+            android:id="@+id/unit_buy_enter"
+            style="@style/textView"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_little_8"
+            android:spinnerMode="dialog"
+            android:entries="@array/buy_unit"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_for_buy_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_for_buy_quantity"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_small_12"
+                android:text="@string/buy_quantity"/>
+
+            <EditText
+                android:id="@+id/quantity_buy_enter"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_little_8"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_for_unit_buy_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_for_unit_buy_price"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_small_12"
+                android:text="@string/price_buy_unit"/>
+
+            <EditText
+                android:id="@+id/price_by_unit_enter"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_little_8"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_for_buy_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_for_buy_amount"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_small_12"
+                android:text="@string/buy_amount"/>
+
+            <EditText
+                android:id="@+id/amount_buy_enter"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_little_8"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_for_buy_importance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_for_buy_importance"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_small_12"
+                android:text="@string/buy_importance"/>
+
+            <Spinner
+                android:id="@+id/importance_buy_enter"
+                style="@style/textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_little_8"
+                android:spinnerMode="dialog"
+                android:entries="@array/buy_importance"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/status_buy_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_normal_16"
+        android:layout_marginTop="@dimen/spacing_little_8"
+        android:textSize="@dimen/text_size_normal_12"
+        android:text="@string/buy_status_check"/>
+
+        <ImageView
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_little_8"
+            android:layout_marginLeft="@dimen/spacing_normal_16"
+            android:layout_marginRight="@dimen/spacing_normal_16"
+            android:src="@drawable/ic_add_shopping_cart_black_24dp"
+            />
+
+    </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v7.widget.CardView>
+

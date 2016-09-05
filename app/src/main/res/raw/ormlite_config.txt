@@ -1,0 +1,117 @@
+#
+# generated on 2016/08/03 01:35:13
+#
+# --table-start--
+dataClass=ru.bolshakova.shoppinglist.data.models.Period
+tableName=period
+# --table-fields-start--
+# --field-start--
+fieldName=periodInitialDate
+columnName=initial_date
+canBeNull=false
+id=true
+unique=true
+# --field-end--
+# --field-start--
+fieldName=periodFinalDate
+columnName=final_date
+canBeNull=false
+unique=true
+# --field-end--
+# --field-start--
+fieldName=costs
+columnName=costs_Period
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=ru.bolshakova.shoppinglist.data.models.Costs
+tableName=costs
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=initialDateCosts
+columnName=initial_date_costs
+canBeNull=false
+unique=true
+# --field-end--
+# --field-start--
+fieldName=planCosts
+columnName=plan_costs
+dataPersister=INTEGER
+# --field-end--
+# --field-start--
+fieldName=factCosts
+columnName=fact_costs
+dataPersister=INTEGER
+# --field-end--
+# --field-start--
+fieldName=planBuysCosts
+columnName=plan_buy_costs
+dataPersister=INTEGER
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=ru.bolshakova.shoppinglist.data.models.Buy
+tableName=buy
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=initialDate
+columnName=initial_date_buy_period
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=itemBuy
+columnName=item_buy
+dataPersister=STRING
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=typeBuy
+columnName=type_buy
+dataPersister=STRING
+# --field-end--
+# --field-start--
+fieldName=unitBuy
+columnName=unit_buy
+dataPersister=STRING
+# --field-end--
+# --field-start--
+fieldName=quantityBuy
+columnName=quantity_buy
+# --field-end--
+# --field-start--
+fieldName=unitPriceBuy
+columnName=unit_price_buy
+# --field-end--
+# --field-start--
+fieldName=amountBuy
+columnName=amount_buy
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=statusBuy
+columnName=status_buy
+dataPersister=BOOLEAN
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=importanceBuy
+columnName=importance_buy
+dataPersister=STRING
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
